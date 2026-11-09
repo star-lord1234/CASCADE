@@ -1,0 +1,55 @@
+{
+  "manifest_version": "1.0",
+  "manifest_id": "phase3-rq1-exploratory-v1",
+  "execution_tier": "EXPLORATORY",
+  "research_phase": "phase3_rq1",
+  "created_at": "2026-11-08",
+  "canonical_source": "data/benchmark/canonical_tasks.jsonl",
+  "canonical_sha256": "8c66fadfb9c5a2491536bcd69a79592adf94433ed398114885b0230d6b7cae0a",
+  "review_state_source": "data/benchmark/human_review_state.json",
+  "review_state_sha256": "ae4530932773f4222186de6b51accb815ef9951c3d75ab4b053d38238e6331f6",
+  "review_state_version": "1.0",
+  "task_count": 12,
+  "human_certified_task_count": 0,
+  "confirmatory_eligible": false,
+  "required_result_label": "exploratory/non-confirmatory",
+  "allowed_use": [
+    "phase3_rq1_engineering",
+    "small_budgeted_exploratory_live_pilot"
+  ],
+  "forbidden_use": [
+    "confirmatory_evaluation",
+    "headline_or_final_rq1_estimates",
+    "task_selection_based_on_observed_outcomes"
+  ],
+  "selection_summary": {
+    "referential_ambiguity": 6,
+    "selective_omission": 6,
+    "solver_answer_yes": 6,
+    "solver_answer_no": 6,
+    "excluded_unresolved_revision_task_ids": [
+      "MB_482ca9361ba403",
+      "MB_fb428975faa243",
+      "MB_172d7c88b0afc0",
+      "MB_c5cc056589b5a9"
+    ],
+    "excluded_flagged_families": [
+      "scope_quantifier",
+      "temporal_ambiguity"
+    ]
+  },
+  "tasks": [
+    {"task_id":"MB_e8ed46b2e2ce70","task_content_sha256":"92fb398dc43ca0c271fb2845f11753d2444e648ac663531d65f2a6d465cb64e1","task_schema_version":"2.0","variant_group_id":"VG_e8ed46b2e2ce70","domain":"grant_eligibility","ambiguity_category":"referential_ambiguity","solver_answer":"NO","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"standard","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"ref_grant","template_id":"referential_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and ambiguity-entailment review remains pending.","Naturalness and plausibility of the shared shorthand remain provisional."]},
+    {"task_id":"MB_d5206eff852e18","task_content_sha256":"8469dca94cfaf793cf98aeeee6b38b5773daa9f03f0b0649406685bd5fd45646","task_schema_version":"2.0","variant_group_id":"VG_d5206eff852e18","domain":"incident_closure","ambiguity_category":"referential_ambiguity","solver_answer":"YES","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"standard","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"ref_incident","template_id":"referential_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and ambiguity-entailment review remains pending.","Naturalness and plausibility of the shared shorthand remain provisional."]},
+    {"task_id":"MB_9ec316c2d7ff71","task_content_sha256":"600eed0201511cf32c2b838a5b1935894ebd506df90e49f8cae7d275f9cb8176","task_schema_version":"2.0","variant_group_id":"VG_9ec316c2d7ff71","domain":"research_selection","ambiguity_category":"referential_ambiguity","solver_answer":"YES","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"standard","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"ref_research","template_id":"referential_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and ambiguity-entailment review remains pending.","Naturalness and plausibility of the shared shorthand remain provisional."]},
+    {"task_id":"MB_f9e21e8df61435","task_content_sha256":"36e1e6a526df8197611c3d129aa7921010667b56c21dbd90d0cdc05ed8f81304","task_schema_version":"2.0","variant_group_id":"VG_f9e21e8df61435","domain":"satellite_clearance","ambiguity_category":"referential_ambiguity","solver_answer":"NO","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"standard","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"ref_satellite","template_id":"referential_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and ambiguity-entailment review remains pending.","Naturalness and plausibility of the shared shorthand remain provisional."]},
+    {"task_id":"MB_80996387a0137c","task_content_sha256":"054f18fa91c38119b91b0f402af0f7d9944d1e243c23dd98950bd4345bc07846","task_schema_version":"2.0","variant_group_id":"VG_80996387a0137c","domain":"warehouse_dispatch","ambiguity_category":"referential_ambiguity","solver_answer":"YES","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"standard","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"ref_warehouse","template_id":"referential_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and ambiguity-entailment review remains pending.","Naturalness and plausibility of the shared shorthand remain provisional."]},
+    {"task_id":"MB_97d92fb026f19e","task_content_sha256":"505068a1e8e3ef2a045b9772c1caa9af00ecfd5b966da303bec6d67cf94256a1","task_schema_version":"2.0","variant_group_id":"VG_97d92fb026f19e","domain":"trial_evaluation","ambiguity_category":"referential_ambiguity","solver_answer":"NO","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"standard","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"ref_trial","template_id":"referential_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and ambiguity-entailment review remains pending.","Naturalness and plausibility of the shared shorthand remain provisional."]},
+    {"task_id":"MB_52eef22c193aa8","task_content_sha256":"bd3d3036b826e283cddb1f3f173644b5f492c049c5c1ed6392f2f97c078d632b","task_schema_version":"2.0","variant_group_id":"VG_52eef22c193aa8","domain":"vendor_approval","ambiguity_category":"selective_omission","solver_answer":"NO","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"standard","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"omit_vendor","template_id":"omission_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and omission-entailment review remains pending.","Decision relevance is mechanically supported; pragmatic misleadingness remains provisional."]},
+    {"task_id":"MB_f84b52352800d4","task_content_sha256":"98308c55abd6f63a878eeadf498528d5b4c0600ae9ab9bd9b6fdee94d5aa6c57","task_schema_version":"2.0","variant_group_id":"VG_f84b52352800d4","domain":"loan_underwriting","ambiguity_category":"selective_omission","solver_answer":"NO","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"standard","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"omit_loan","template_id":"omission_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and omission-entailment review remains pending.","Decision relevance is mechanically supported; pragmatic misleadingness remains provisional."]},
+    {"task_id":"MB_7a8770e34f9507","task_content_sha256":"8fe84f188b58736e3a4c9c210b9fc719f2dddc19a69a0ac22e28a376a89434f0","task_schema_version":"2.0","variant_group_id":"VG_7a8770e34f9507","domain":"access_control","ambiguity_category":"selective_omission","solver_answer":"YES","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"valid_low_strength","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"omit_access","template_id":"omission_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and omission-entailment review remains pending.","Valid but low-strength omission candidate; it need not be independently misleading."]},
+    {"task_id":"MB_b8ab36e84d7bcf","task_content_sha256":"803cf9486f11769dbc5f50625acc23d86d2b507c7b9df18610a86d5ce3e3204d","task_schema_version":"2.0","variant_group_id":"VG_b8ab36e84d7bcf","domain":"bridge_operations","ambiguity_category":"selective_omission","solver_answer":"NO","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"standard","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"omit_bridge","template_id":"omission_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and omission-entailment review remains pending.","Decision relevance is mechanically supported; pragmatic misleadingness remains provisional."]},
+    {"task_id":"MB_df3bcb6b44ad99","task_content_sha256":"72d47f39b1ea694480e57dc78053c8d1f3ee659b0e75b974a024a4d0f7e2fa58","task_schema_version":"2.0","variant_group_id":"VG_df3bcb6b44ad99","domain":"cargo_clearance","ambiguity_category":"selective_omission","solver_answer":"YES","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"valid_low_strength","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"omit_cargo","template_id":"omission_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and omission-entailment review remains pending.","Valid but low-strength omission candidate; it need not be independently misleading."]},
+    {"task_id":"MB_449b417cca0a77","task_content_sha256":"ffd2fddde95016ba55ca1700ca316948dbd52fd8bf7f88258908f982044d1e12","task_schema_version":"2.0","variant_group_id":"VG_449b417cca0a77","domain":"water_quality","ambiguity_category":"selective_omission","solver_answer":"YES","review_status":"provisional_summary_approved","review_basis":"summary_only","strength_note":"valid_low_strength","human_certified":false,"confirmatory_eligible":false,"generator_version":"1.0","blueprint_id":"omit_water","template_id":"omission_v1","known_semantic_risks":["Full source-record, evidence-view, truthfulness and omission-entailment review remains pending.","Valid but low-strength omission candidate; it need not be independently misleading."]}
+  ]
+}

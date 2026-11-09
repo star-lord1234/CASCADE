@@ -1,0 +1,94 @@
+{
+  "additionalProperties": false,
+  "description": "Provider-neutral result from one independent semantic screening run.",
+  "properties": {
+    "correct_referent": {
+      "enum": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "title": "Correct Referent",
+      "type": "string"
+    },
+    "decision_relevance": {
+      "enum": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "title": "Decision Relevance",
+      "type": "string"
+    },
+    "evidence_sufficiency": {
+      "enum": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "title": "Evidence Sufficiency",
+      "type": "string"
+    },
+    "factual_entailment": {
+      "enum": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "title": "Factual Entailment",
+      "type": "string"
+    },
+    "judge_id": {
+      "minLength": 1,
+      "title": "Judge Id",
+      "type": "string"
+    },
+    "plausible_alternative": {
+      "enum": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "title": "Plausible Alternative",
+      "type": "string"
+    },
+    "rationale": {
+      "minLength": 1,
+      "title": "Rationale",
+      "type": "string"
+    },
+    "risk_decision": {
+      "enum": [
+        "low_risk",
+        "flagged",
+        "uncertain"
+      ],
+      "title": "Risk Decision",
+      "type": "string"
+    },
+    "run_id": {
+      "minLength": 1,
+      "title": "Run Id",
+      "type": "string"
+    },
+    "task_id": {
+      "minLength": 1,
+      "title": "Task Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "task_id",
+    "judge_id",
+    "run_id",
+    "factual_entailment",
+    "correct_referent",
+    "plausible_alternative",
+    "decision_relevance",
+    "evidence_sufficiency",
+    "risk_decision",
+    "rationale"
+  ],
+  "title": "JudgeAssessment",
+  "type": "object"
+}

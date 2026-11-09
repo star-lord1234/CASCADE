@@ -1,0 +1,407 @@
+{
+  "answer_counts": {
+    "NO": 19,
+    "YES": 21
+  },
+  "benchmark_status": "mechanically_valid_draft",
+  "category_counts": {
+    "referential_ambiguity": 15,
+    "scope_quantifier": 5,
+    "selective_omission": 15,
+    "temporal_ambiguity": 5
+  },
+  "dataset_checks": [
+    {
+      "check": "task_count",
+      "detail": "Observed 40 tasks; expected 40.",
+      "passed": true
+    },
+    {
+      "check": "category_distribution",
+      "detail": "Observed {'referential_ambiguity': 15, 'selective_omission': 15, 'scope_quantifier': 5, 'temporal_ambiguity': 5}.",
+      "passed": true
+    },
+    {
+      "check": "unique_task_ids",
+      "detail": "Task IDs are unique.",
+      "passed": true
+    },
+    {
+      "check": "unique_variant_group_ids",
+      "detail": "Variant group IDs are unique.",
+      "passed": true
+    },
+    {
+      "check": "unique_source_blueprint_ids",
+      "detail": "Programmatic source blueprint IDs are unique.",
+      "passed": true
+    },
+    {
+      "check": "unique_content",
+      "detail": "Questions, facts, and messages have unique fingerprints.",
+      "passed": true
+    },
+    {
+      "check": "answer_balance",
+      "detail": "Observed answer counts {'NO': 19, 'YES': 21}.",
+      "passed": true
+    },
+    {
+      "check": "domain_diversity",
+      "detail": "At least 35 distinct fictional domains are represented.",
+      "passed": true
+    },
+    {
+      "check": "development_only",
+      "detail": "All draft tasks remain in development pending review.",
+      "passed": true
+    }
+  ],
+  "failed_checks": 0,
+  "human_review_required": [
+    "natural-language truthfulness beyond the structured claim checks",
+    "whether the defensible interpretation is pragmatically available",
+    "whether the misleading interpretation is plausible and sufficiently strong",
+    "whether evidence wording creates unintended clues or domain artifacts",
+    "whether the five-agent distribution is experimentally natural rather than merely structurally sufficient"
+  ],
+  "mechanically_verified": [
+    "schema and ID references",
+    "typed rule execution and ground-truth reproduction",
+    "controlled-template fact-level truth conditions",
+    "counterfactual incorrectness of the intended interpretation",
+    "five-view evidence allocation and combined sufficiency",
+    "agent-view field isolation",
+    "content, task-ID, group-ID, and blueprint-ID uniqueness",
+    "full-context control recommendation consistency",
+    "deterministic seed provenance and development-only split"
+  ],
+  "passed_checks": 649,
+  "schema_version": "2.0",
+  "semantic_reviews_approved": 0,
+  "semantic_reviews_pending": 40,
+  "task_count": 40,
+  "task_results": [
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "grant_eligibility",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_e8ed46b2e2ce70"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "incident_closure",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_d5206eff852e18"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "permit_compliance",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_482ca9361ba403"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "research_selection",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_9ec316c2d7ff71"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "satellite_clearance",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_f9e21e8df61435"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "warehouse_dispatch",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_80996387a0137c"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "trial_evaluation",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_97d92fb026f19e"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "school_procurement",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_21846374ba0e74"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "marine_inspection",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_6b778c15634e9a"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "datacenter_failover",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_a0058038f4d4a9"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "rail_maintenance",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_49ce9657a6cda5"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "insurance_claims",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_5ffc2f0f863732"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "energy_projects",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_3a329f2a05491d"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "airport_gates",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_7d06553adfd548"
+    },
+    {
+      "ambiguity_category": "referential_ambiguity",
+      "domain": "food_safety",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_04e318d687abff"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "vendor_approval",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_52eef22c193aa8"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "medication_dispensing",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_fb428975faa243"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "loan_underwriting",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_f84b52352800d4"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "access_control",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_7a8770e34f9507"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "bridge_operations",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_b8ab36e84d7bcf"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "claim_payment",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_172d7c88b0afc0"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "software_release",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_396c78bb425b95"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "cargo_clearance",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_df3bcb6b44ad99"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "hiring_decision",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_8152ca77a9f7c2"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "water_quality",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_449b417cca0a77"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "drone_flight",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_b24c2d9d0f58e3"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "invoice_payment",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_a8d471a8ca045c"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "laboratory_access",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_268c0f4458c096"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "route_approval",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_c5cc056589b5a9"
+    },
+    {
+      "ambiguity_category": "selective_omission",
+      "domain": "records_retention",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_9c492c32b1e544"
+    },
+    {
+      "ambiguity_category": "scope_quantifier",
+      "domain": "quality_control",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_1701d7e6a17dbb"
+    },
+    {
+      "ambiguity_category": "scope_quantifier",
+      "domain": "project_completion",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_8b16a9d5a3d7dc"
+    },
+    {
+      "ambiguity_category": "scope_quantifier",
+      "domain": "compliance_audit",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_0b4bd44f4e22f2"
+    },
+    {
+      "ambiguity_category": "scope_quantifier",
+      "domain": "trial_readiness",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_2f21f7ce15cf87"
+    },
+    {
+      "ambiguity_category": "scope_quantifier",
+      "domain": "fleet_certification",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_a292f5d33b1746"
+    },
+    {
+      "ambiguity_category": "temporal_ambiguity",
+      "domain": "certificate_validity",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_49307215f599c8"
+    },
+    {
+      "ambiguity_category": "temporal_ambiguity",
+      "domain": "service_recovery",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_7bb0c9d8ab42ee"
+    },
+    {
+      "ambiguity_category": "temporal_ambiguity",
+      "domain": "permit_window",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_48cc49b4a0476f"
+    },
+    {
+      "ambiguity_category": "temporal_ambiguity",
+      "domain": "inventory_release",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "YES",
+      "task_id": "MB_8e69dfd30d7012"
+    },
+    {
+      "ambiguity_category": "temporal_ambiguity",
+      "domain": "patch_readiness",
+      "failed_checks": [],
+      "passed_checks": 16,
+      "solver_answer": "NO",
+      "task_id": "MB_9ad6958883eedc"
+    }
+  ],
+  "total_checks": 649
+}

@@ -1,0 +1,13 @@
+{
+  "manifest_version": "1.0",
+  "manifest_id": "phase3-rq1-confirmatory-v1",
+  "execution_tier": "CONFIRMATORY",
+  "status": "blocked_pending_individual_semantic_review",
+  "source_exploratory_manifest": "phase3-rq1-exploratory-v1",
+  "canonical_source": "data/benchmark/canonical_tasks.jsonl",
+  "canonical_sha256": "8c66fadfb9c5a2491536bcd69a79592adf94433ed398114885b0230d6b7cae0a",
+  "required_approved_task_count": 10,
+  "task_count": 0,
+  "tasks": [],
+  "note": "No task has completed source-record, evidence-view, truthfulness, ambiguity/omission-function, decision-relevance, and evidence-allocation review. This empty manifest prevents provisional approvals from being treated as confirmatory certification."
+}

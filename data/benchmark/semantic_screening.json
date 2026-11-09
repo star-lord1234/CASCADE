@@ -1,0 +1,2045 @@
+{
+  "authority_statement": "Deterministic screening and optional LLM judgments route review effort only. Neither can set human approval or redefine solver ground truth.",
+  "benchmark_task_count": 40,
+  "flagged_pending_human": 10,
+  "full_human_approved": 0,
+  "full_human_review_pending": 40,
+  "human_approved": 0,
+  "llm_judgment_count": 0,
+  "low_risk_pending_human": 30,
+  "provisional_summary_approved": 26,
+  "revised_pending_summary_review": 4,
+  "screening_version": "1.0",
+  "tasks": [
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Northstar completed the required audit.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Northstar Analytics passed the baseline and record checks and did not complete the required audit; Northstar Robotics completed the required audit. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "grant_eligibility",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Interpret Northstar as Northstar Analytics, infer that its decisive qualifier is True, and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Northstar Robotics completed the required audit.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_e8ed46b2e2ce70",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Atlas was not restored.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Atlas Gateway passed the baseline and record checks and was restored; Atlas Archive was not restored. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "incident_closure",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Interpret Atlas as Atlas Gateway, infer that its decisive qualifier is False, and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Atlas Archive was not restored.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_d5206eff852e18",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Cedar Center holds a valid permit.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Cedar Center North passed the baseline and record checks and does not hold a valid permit; Cedar Center South holds a valid permit. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "permit_compliance",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Revised entity names now provide the shared surface Cedar Center; the revised source record has not been reviewed.",
+      "human_review_status": "revised_pending_summary_review",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Interpret Cedar Center as Cedar Center North, infer that its decisive qualifier is True, and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Cedar Center South holds a valid permit.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "revision_pending",
+      "task_id": "MB_482ca9361ba403",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Nova does not use an approved public dataset.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Nova Coastal passed the baseline and record checks and uses an approved public dataset; Nova Climate does not use an approved public dataset. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "research_selection",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Interpret Nova as Nova Coastal, infer that its decisive qualifier is False, and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Nova Climate does not use an approved public dataset.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_9ec316c2d7ff71",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Orion passed the interference check.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Orion Relay passed the baseline and record checks and failed the interference check; Orion Archive passed the interference check. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "satellite_clearance",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Interpret Orion as Orion Relay, infer that its decisive qualifier is True, and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Orion Archive passed the interference check.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_f9e21e8df61435",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Meridian does not have a certified loading crew.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Meridian East passed the baseline and record checks and has a certified loading crew; Meridian West does not have a certified loading crew. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "warehouse_dispatch",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Interpret Meridian as Meridian East, infer that its decisive qualifier is False, and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Meridian West does not have a certified loading crew.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_80996387a0137c",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Lumen met the primary endpoint.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Lumen Alpha passed the baseline and record checks and did not meet the primary endpoint; Lumen Beta met the primary endpoint. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "trial_evaluation",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Interpret Lumen as Lumen Alpha, infer that its decisive qualifier is True, and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Lumen Beta met the primary endpoint.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_97d92fb026f19e",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Pine Ridge did not submit the safety certificate.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Pine Ridge School passed the baseline and record checks and submitted the safety certificate; Pine Ridge District did not submit the safety certificate. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "school_procurement",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Interpret Pine Ridge as Pine Ridge School, infer that its decisive qualifier is False, and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Pine Ridge District did not submit the safety certificate.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_21846374ba0e74",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Harbor passed the hull inspection.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Harbor One passed the baseline and record checks and failed the hull inspection; Harbor Two passed the hull inspection. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "marine_inspection",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Interpret Harbor as Harbor One, infer that its decisive qualifier is True, and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Harbor Two passed the hull inspection.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_6b778c15634e9a",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Aurora failed the stability check.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Aurora Core passed the baseline and record checks and passed the stability check; Aurora Backup failed the stability check. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "datacenter_failover",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Interpret Aurora as Aurora Core, infer that its decisive qualifier is False, and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Aurora Backup failed the stability check.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_a0058038f4d4a9",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Summit completed the brake inspection.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Summit Line passed the baseline and record checks and did not complete the brake inspection; Summit Yard completed the brake inspection. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "rail_maintenance",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Interpret Summit as Summit Line, infer that its decisive qualifier is True, and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Summit Yard completed the brake inspection.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_49ce9657a6cda5",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Beacon does not have active incident coverage.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Beacon Home passed the baseline and record checks and has active incident coverage; Beacon Auto does not have active incident coverage. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "insurance_claims",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Interpret Beacon as Beacon Home, infer that its decisive qualifier is False, and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Beacon Auto does not have active incident coverage.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_5ffc2f0f863732",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Solace passed the grid-impact review.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Solace Solar passed the baseline and record checks and failed the grid-impact review; Solace Storage passed the grid-impact review. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "energy_projects",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Interpret Solace as Solace Solar, infer that its decisive qualifier is True, and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Solace Storage passed the grid-impact review.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_3a329f2a05491d",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Crescent Gate did not complete the security sweep.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Crescent Gate A passed the baseline and record checks and completed the security sweep; Crescent Gate B did not complete the security sweep. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "airport_gates",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Interpret Crescent Gate as Crescent Gate A, infer that its decisive qualifier is False, and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Crescent Gate B did not complete the security sweep.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_7d06553adfd548",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Meadow passed the contamination screen.",
+      "category": "referential_ambiguity",
+      "check_details": [
+        "Shared surface resolves to two declared entities with distinct roles.",
+        "Ambiguous text contains the shared surface without a disambiguating entity suffix.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Meadow Plant passed the baseline and record checks and failed the contamination screen; Meadow Depot passed the contamination screen. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "food_safety",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Interpret Meadow as Meadow Plant, infer that its decisive qualifier is True, and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "Meadow Depot passed the contamination screen.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_04e318d687abff",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Ember Supply met the preliminary review checks.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Ember Supply, identity screening passed and the ownership record is complete, but the sanctions check is not clear. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "vendor_approval",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as True and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Ember Supply, identity screening passed and the ownership record is complete.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_52eef22c193aa8",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "The allergy-review alert placed the Caldra prescription on a dispensing hold pending review.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Caldra prescription, the prescription is valid, the stock record is complete, and an allergy-review alert was recorded. When recorded, the allergy-review alert placed the Caldra prescription on a dispensing hold pending review. However, the allergy check is clear. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "medication_dispensing",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Revised message now reports the alert's historical dispensing hold without claiming it remains unresolved; the revised source record has not been reviewed.",
+      "human_review_status": "revised_pending_summary_review",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as False and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "The allergy-review alert placed the Caldra prescription on a dispensing hold pending review.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "revision_pending",
+      "task_id": "MB_fb428975faa243",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Juniper loan met the preliminary review checks.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Juniper loan, identity verification passed and the income record is complete, but the collateral check is insufficient. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "loan_underwriting",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as True and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Juniper loan, identity verification passed and the income record is complete.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_f84b52352800d4",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "The review for Keystone access request found a multi-factor alert.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Keystone access request, password verification passed, the account record is complete, and a multi-factor alert was recorded. However, multi-factor verification is complete. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "access_control",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Valid low-strength omission candidate; do not require or infer strong misleadingness. Full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as False and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Keystone access request, a multi-factor alert was recorded.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "valid_low_strength",
+      "task_id": "MB_7a8770e34f9507",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Silver Bridge met the preliminary review checks.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Silver Bridge, the structural screen passed and the inspection record is complete, but the wind check exceeds limits. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "bridge_operations",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as True and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Silver Bridge, the structural screen passed and the inspection record is complete.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_b8ab36e84d7bcf",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "River claim was flagged because the incident date initially appeared outside the policy period.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For River claim, policy verification passed, the filing record is complete, and a coverage-review issue was recorded. The coverage-review issue was opened because the incident date initially appeared outside the policy period. However, the incident is covered. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "claim_payment",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Revised message links the coverage flag to the initial out-of-period appearance while preserving the covered outcome; the revised source record has not been reviewed.",
+      "human_review_status": "revised_pending_summary_review",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as False and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "River claim was flagged because the incident date initially appeared outside the policy period.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "revision_pending",
+      "task_id": "MB_172d7c88b0afc0",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Vertex release met the preliminary review checks.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Vertex release, the build screen passed and the test record is complete, but the rollback check is not ready. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "software_release",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as True and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Vertex release, the build screen passed and the test record is complete.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_396c78bb425b95",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "The review for Tide cargo found a weight-review alert.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Tide cargo, the manifest screen passed, the customs record is complete, and a weight-review alert was recorded. However, the weight check is within limits. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "cargo_clearance",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Valid low-strength omission candidate; do not require or infer strong misleadingness. Full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as False and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Tide cargo, a weight-review alert was recorded.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "valid_low_strength",
+      "task_id": "MB_df3bcb6b44ad99",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Alder candidate met the preliminary review checks.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Alder candidate, identity screening passed and the interview record is complete, but the required certification is invalid. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "hiring_decision",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as True and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Alder candidate, identity screening passed and the interview record is complete.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_8152ca77a9f7c2",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "The review for Delta Reservoir found a contaminant-review alert.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Delta Reservoir, the intake screen passed, the sample record is complete, and a contaminant-review alert was recorded. However, the contaminant check is within limits. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "water_quality",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Valid low-strength omission candidate; do not require or infer strong misleadingness. Full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as False and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Delta Reservoir, a contaminant-review alert was recorded.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "valid_low_strength",
+      "task_id": "MB_449b417cca0a77",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Kestrel drone met the preliminary review checks.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Kestrel drone, the route screen passed and the flight record is complete, but the battery check is insufficient. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "drone_flight",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as True and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Kestrel drone, the route screen passed and the flight record is complete.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_b24c2d9d0f58e3",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "The review for Opal invoice found an authorization-review alert.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Opal invoice, the vendor screen passed, the receipt record is complete, and an authorization-review alert was recorded. However, the authorization check is complete. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "invoice_payment",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Valid low-strength omission candidate; do not require or infer strong misleadingness. Full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as False and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Opal invoice, an authorization-review alert was recorded.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "valid_low_strength",
+      "task_id": "MB_a8d471a8ca045c",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Quartz laboratory request met the preliminary review checks.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Quartz laboratory request, identity screening passed and the training record is complete, but the hazard briefing is expired. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "laboratory_access",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as True and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Quartz laboratory request, identity screening passed and the training record is complete.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_268c0f4458c096",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "The clearance log contains an insufficient-clearance alert for the same Willow route and convoy configuration.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Willow route, the map screen passed, the vehicle record is complete, and an insufficient-clearance alert was recorded. The earlier clearance alert concerned the same Willow route and convoy configuration named in the decision question. However, the clearance check is sufficient. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "route_approval",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "Revised message links the earlier insufficient-clearance alert to the same route and convoy configuration; the revised source record has not been reviewed.",
+      "human_review_status": "revised_pending_summary_review",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as False and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "The clearance log contains an insufficient-clearance alert for the same Willow route and convoy configuration.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "revision_pending",
+      "task_id": "MB_c5cc056589b5a9",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Mosaic archive transfer met the preliminary review checks.",
+      "category": "selective_omission",
+      "check_details": [
+        "Omitted qualifiers are explicit, decisive, and absent from the omission sources.",
+        "Underspecified text omits the decisive qualifier while retaining true source facts.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "For Mosaic archive transfer, the inventory screen passed and the custody record is complete, but the retention check is not satisfied. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "low_risk",
+      "domain": "records_retention",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "Provisionally approved from the compact summary; full record review remains pending.",
+      "human_review_status": "provisional_summary_approved",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Treat the omitted decisive qualifier as True and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "For Mosaic archive transfer, the inventory screen passed and the custody record is complete.",
+      "review_basis": "summary_only",
+      "risk_codes": [],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "No task-specific deterministic or heuristic risk was found; pragmatic strength still requires human review.",
+      "strength_note": "standard",
+      "task_id": "MB_9c492c32b1e544",
+      "validation_status": "low_risk_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "All tests did not pass.",
+      "category": "scope_quantifier",
+      "check_details": [
+        "Quantifier scopes refer only to declared entities.",
+        "Text contains the intended all/negation scope configuration.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Both mandatory tests for Batch Elm passed; one optional test did not pass, and the record is complete. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "flagged",
+      "domain": "quality_control",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "No human review decision has been recorded.",
+      "human_review_status": "pending",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Read 'all tests did not pass' as every mandatory item failing and answer NO, rather than as not all items passing.",
+      "llm_screening_rationales": [],
+      "omission_statement": "One test for Batch Elm did not pass.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [
+        "MARKED_SCOPE_NEGATION_TEMPLATE"
+      ],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "The repeated 'all \u2026 did not' construction is logically interpretable but may be marked, unnatural, or language-model-specific.",
+      "strength_note": "standard",
+      "task_id": "MB_1701d7e6a17dbb",
+      "validation_status": "flagged_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "All tasks did not pass.",
+      "category": "scope_quantifier",
+      "check_details": [
+        "Quantifier scopes refer only to declared entities.",
+        "Text contains the intended all/negation scope configuration.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Both mandatory tasks for Project Iris passed; one optional task did not pass, and the record is complete. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "flagged",
+      "domain": "project_completion",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "No human review decision has been recorded.",
+      "human_review_status": "pending",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Read 'all tasks did not pass' as every mandatory item failing and answer NO, rather than as not all items passing.",
+      "llm_screening_rationales": [],
+      "omission_statement": "One task for Project Iris did not pass.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [
+        "MARKED_SCOPE_NEGATION_TEMPLATE"
+      ],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "The repeated 'all \u2026 did not' construction is logically interpretable but may be marked, unnatural, or language-model-specific.",
+      "strength_note": "standard",
+      "task_id": "MB_8b16a9d5a3d7dc",
+      "validation_status": "flagged_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "All checks did not pass.",
+      "category": "scope_quantifier",
+      "check_details": [
+        "Quantifier scopes refer only to declared entities.",
+        "Text contains the intended all/negation scope configuration.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Both mandatory checks for Lake audit passed; one optional check did not pass, and the record is complete. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "flagged",
+      "domain": "compliance_audit",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "No human review decision has been recorded.",
+      "human_review_status": "pending",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Read 'all checks did not pass' as every mandatory item failing and answer NO, rather than as not all items passing.",
+      "llm_screening_rationales": [],
+      "omission_statement": "One check for Lake audit did not pass.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [
+        "MARKED_SCOPE_NEGATION_TEMPLATE"
+      ],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "The repeated 'all \u2026 did not' construction is logically interpretable but may be marked, unnatural, or language-model-specific.",
+      "strength_note": "standard",
+      "task_id": "MB_0b4bd44f4e22f2",
+      "validation_status": "flagged_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "All assessments did not pass.",
+      "category": "scope_quantifier",
+      "check_details": [
+        "Quantifier scopes refer only to declared entities.",
+        "Text contains the intended all/negation scope configuration.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Both mandatory assessments for Prairie trial passed; one optional assessment did not pass, and the record is complete. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "flagged",
+      "domain": "trial_readiness",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "No human review decision has been recorded.",
+      "human_review_status": "pending",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Read 'all assessments did not pass' as every mandatory item failing and answer NO, rather than as not all items passing.",
+      "llm_screening_rationales": [],
+      "omission_statement": "One assessment for Prairie trial did not pass.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [
+        "MARKED_SCOPE_NEGATION_TEMPLATE"
+      ],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "The repeated 'all \u2026 did not' construction is logically interpretable but may be marked, unnatural, or language-model-specific.",
+      "strength_note": "standard",
+      "task_id": "MB_2f21f7ce15cf87",
+      "validation_status": "flagged_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "All inspections did not pass.",
+      "category": "scope_quantifier",
+      "check_details": [
+        "Quantifier scopes refer only to declared entities.",
+        "Text contains the intended all/negation scope configuration.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "Both mandatory inspections for Maple fleet passed; one optional inspection did not pass, and the record is complete. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "flagged",
+      "domain": "fleet_certification",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "No human review decision has been recorded.",
+      "human_review_status": "pending",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Read 'all inspections did not pass' as every mandatory item failing and answer NO, rather than as not all items passing.",
+      "llm_screening_rationales": [],
+      "omission_statement": "One inspection for Maple fleet did not pass.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [
+        "MARKED_SCOPE_NEGATION_TEMPLATE"
+      ],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "The repeated 'all \u2026 did not' construction is logically interpretable but may be marked, unnatural, or language-model-specific.",
+      "strength_note": "standard",
+      "task_id": "MB_a292f5d33b1746",
+      "validation_status": "flagged_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Cobalt certificate was valid.",
+      "category": "temporal_ambiguity",
+      "check_details": [
+        "Defensible and misleading temporal anchors are distinct typed values.",
+        "Ambiguous text omits the time anchor stored in the contract.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "At minute 636, before the minute-936 deadline, Cobalt certificate was not valid; earlier at minute 336, it was valid. The record is complete. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "flagged",
+      "domain": "certificate_validity",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "No human review decision has been recorded.",
+      "human_review_status": "pending",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Apply the earlier status to the decision time and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "At the earlier observation, Cobalt certificate was valid.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [
+        "TEMPORAL_PAST_TENSE_CUE"
+      ],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "Past-tense wording may itself cue a historical reading, weakening the intended decision-time misinterpretation.",
+      "strength_note": "standard",
+      "task_id": "MB_49307215f599c8",
+      "validation_status": "flagged_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Drift service was not restored.",
+      "category": "temporal_ambiguity",
+      "check_details": [
+        "Defensible and misleading temporal anchors are distinct typed values.",
+        "Ambiguous text omits the time anchor stored in the contract.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "At minute 637, before the minute-937 deadline, Drift service was restored; earlier at minute 337, it was not restored. The record is complete. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "flagged",
+      "domain": "service_recovery",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "No human review decision has been recorded.",
+      "human_review_status": "pending",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Apply the earlier status to the decision time and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "At the earlier observation, Drift service was not restored.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [
+        "TEMPORAL_PAST_TENSE_CUE"
+      ],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "Past-tense wording may itself cue a historical reading, weakening the intended decision-time misinterpretation.",
+      "strength_note": "standard",
+      "task_id": "MB_7bb0c9d8ab42ee",
+      "validation_status": "flagged_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Fern permit was active.",
+      "category": "temporal_ambiguity",
+      "check_details": [
+        "Defensible and misleading temporal anchors are distinct typed values.",
+        "Ambiguous text omits the time anchor stored in the contract.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "At minute 638, before the minute-938 deadline, Fern permit was not active; earlier at minute 338, it was active. The record is complete. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "flagged",
+      "domain": "permit_window",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "No human review decision has been recorded.",
+      "human_review_status": "pending",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Apply the earlier status to the decision time and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "At the earlier observation, Fern permit was active.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [
+        "TEMPORAL_PAST_TENSE_CUE"
+      ],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "Past-tense wording may itself cue a historical reading, weakening the intended decision-time misinterpretation.",
+      "strength_note": "standard",
+      "task_id": "MB_48cc49b4a0476f",
+      "validation_status": "flagged_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Glacier inventory was not cleared.",
+      "category": "temporal_ambiguity",
+      "check_details": [
+        "Defensible and misleading temporal anchors are distinct typed values.",
+        "Ambiguous text omits the time anchor stored in the contract.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "At minute 639, before the minute-939 deadline, Glacier inventory was cleared; earlier at minute 339, it was not cleared. The record is complete. Therefore the answer is YES.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "flagged",
+      "domain": "inventory_release",
+      "evidence_view_review": "pending",
+      "ground_truth": "YES",
+      "human_review_notes": "No human review decision has been recorded.",
+      "human_review_status": "pending",
+      "intended_incorrect_answer": "NO",
+      "intended_incorrect_inference": "Apply the earlier status to the decision time and answer NO.",
+      "llm_screening_rationales": [],
+      "omission_statement": "At the earlier observation, Glacier inventory was not cleared.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [
+        "TEMPORAL_PAST_TENSE_CUE"
+      ],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "Past-tense wording may itself cue a historical reading, weakening the intended decision-time misinterpretation.",
+      "strength_note": "standard",
+      "task_id": "MB_8e69dfd30d7012",
+      "validation_status": "flagged_pending_human"
+    },
+    {
+      "ambiguity_entailment_review": "pending",
+      "ambiguous_statement": "Horizon patch was approved.",
+      "category": "temporal_ambiguity",
+      "check_details": [
+        "Defensible and misleading temporal anchors are distinct typed values.",
+        "Ambiguous text omits the time anchor stored in the contract.",
+        "Combined views solve the task; no private view contains every rule fact."
+      ],
+      "clear_statement": "At minute 640, before the minute-940 deadline, Horizon patch was not approved; earlier at minute 340, it was approved. The record is complete. Therefore the answer is NO.",
+      "condition_checks": {
+        "ambiguous": {
+          "correct_referent_or_scope": true,
+          "decision_relevant": true,
+          "factual_entailment": true,
+          "plausible_alternative_proxy": true
+        },
+        "clear": {
+          "complete_and_solver_consistent": true,
+          "factual_entailment": true
+        },
+        "evidence": {
+          "combined_sufficient_and_private_incomplete": true
+        },
+        "omission": {
+          "decisive_qualifier_omitted": true,
+          "factual_entailment": true,
+          "misleading_strength_required": false
+        }
+      },
+      "deterministic_route": "flagged",
+      "domain": "patch_readiness",
+      "evidence_view_review": "pending",
+      "ground_truth": "NO",
+      "human_review_notes": "No human review decision has been recorded.",
+      "human_review_status": "pending",
+      "intended_incorrect_answer": "YES",
+      "intended_incorrect_inference": "Apply the earlier status to the decision time and answer YES.",
+      "llm_screening_rationales": [],
+      "omission_statement": "At the earlier observation, Horizon patch was approved.",
+      "review_basis": "not_reviewed",
+      "risk_codes": [
+        "TEMPORAL_PAST_TENSE_CUE"
+      ],
+      "screening_agreement": "not_screened",
+      "source_record_review": "pending",
+      "specific_risk": "Past-tense wording may itself cue a historical reading, weakening the intended decision-time misinterpretation.",
+      "strength_note": "standard",
+      "task_id": "MB_9ad6958883eedc",
+      "validation_status": "flagged_pending_human"
+    }
+  ],
+  "template_diversity": {
+    "category_answer_counts": {
+      "referential_ambiguity": {
+        "NO": 8,
+        "YES": 7
+      },
+      "scope_quantifier": {
+        "YES": 5
+      },
+      "selective_omission": {
+        "NO": 8,
+        "YES": 7
+      },
+      "temporal_ambiguity": {
+        "NO": 3,
+        "YES": 2
+      }
+    },
+    "domain_count": 40,
+    "structural_signature_count": 9,
+    "structural_signature_counts": {
+      "omission_resolved_context_v2:YES": 3,
+      "omission_v1:NO": 8,
+      "omission_v1:YES": 4,
+      "referential_shared_shorthand_v2:NO": 1,
+      "referential_v1:NO": 7,
+      "referential_v1:YES": 7,
+      "scope_v1:YES": 5,
+      "temporal_v1:NO": 3,
+      "temporal_v1:YES": 2
+    },
+    "surface_ambiguous_statement_count": 40,
+    "systematic_weaknesses": [
+      "Forty surface-distinct tasks reduce to 9 template/answer structural signatures, creating memorization and template-artifact risk.",
+      "All five scope tasks use the same marked wide-scope-negation construction and all have ground truth YES, creating category/answer confounding.",
+      "All five temporal tasks use the same historical-versus-current-status pattern; past tense may reveal the defensible reading.",
+      "All fifteen referential tasks use shared-name-prefix ambiguity; pronouns, roles, descriptions, and discourse anaphora are absent.",
+      "Omission tasks remain concentrated in failed-qualifier and detected-but-resolved-issue patterns, despite three contextualized resolved-issue revisions.",
+      "Complete controls always state the answer explicitly and are longer than treatment messages, creating condition-specific style cues.",
+      "Evidence allocations are structurally sufficient but generated by deterministic shuffling rather than domain-role modeling."
+    ],
+    "template_counts": {
+      "omission_resolved_context_v2": 3,
+      "omission_v1": 12,
+      "referential_shared_shorthand_v2": 1,
+      "referential_v1": 14,
+      "scope_v1": 5,
+      "temporal_v1": 5
+    }
+  }
+}

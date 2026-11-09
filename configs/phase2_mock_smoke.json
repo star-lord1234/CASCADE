@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "phase2_mock_smoke",
+  "benchmark_path": "data/benchmark/canonical_tasks.jsonl",
+  "output_trace_path": "data/development/traces/phase2_mock_smoke.jsonl",
+  "task_ids": ["MB_e8ed46b2e2ce70"],
+  "conditions": ["independent", "clear", "ambiguous", "omission"],
+  "topology": "fully_connected",
+  "repetition": 1,
+  "random_seed": 42,
+  "communication_rounds": 1,
+  "agent_count": 5,
+  "injection_round": 1,
+  "stimulus_sender_id": "agent_1",
+  "star_center_id": null
+}

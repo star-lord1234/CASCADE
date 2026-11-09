@@ -1,0 +1,10 @@
+{
+  "canonical_tasks_modified": false,
+  "canonical_tasks_sha256": "8c66fadfb9c5a2491536bcd69a79592adf94433ed398114885b0230d6b7cae0a",
+  "full_human_approved": 0,
+  "full_human_review_pending": 40,
+  "previous_review_preserved_at": "data/benchmark/history/v2/",
+  "provisional_summary_approved": 26,
+  "revised_pending_summary_review": 4,
+  "screening_version": "1.0"
+}

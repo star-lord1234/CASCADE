@@ -1,0 +1,28 @@
+{
+  "accepted_draft_count": 38,
+  "approved_count": 0,
+  "dataset_split": "development",
+  "embedded_candidate_objects": 1577,
+  "needs_review_count": 38,
+  "raw_source_modified": false,
+  "reason_counts": {
+    "INSUFFICIENT_FACTS": 188,
+    "INSUFFICIENT_RULE_FACTS": 9,
+    "INVALID_FACT_CONTAINER": 2,
+    "INVALID_FIELD_TYPE": 47,
+    "MALFORMED_COMPLETION_JSON": 6,
+    "NON_SCALAR_FACT": 1,
+    "RULE_TYPE_MISMATCH": 5,
+    "RULE_UNKNOWN_FACT": 291,
+    "UNSUPPORTED_RULE_SYNTAX": 817,
+    "UNSUPPORTED_STRING_ORDERING": 179
+  },
+  "rejected_count": 1545,
+  "review_rows": 1583,
+  "semantic_certification": "none; every accepted draft remains needs_review",
+  "source_path": "data/raw/adaption_candidates.jsonl",
+  "source_wrapper_rows": 100,
+  "warning_counts": {
+    "DUPLICATE_SOURCE_ID": 1183
+  }
+}

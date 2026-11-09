@@ -1,0 +1,7 @@
+{
+  "canonical_tasks_modified": false,
+  "canonical_tasks_sha256": "7b869086091cf1337d04c77e392445e64db2f792d51f92efb868d11d7d3bd377",
+  "human_approved": 0,
+  "previous_review_preserved_at": "data/benchmark/history/v1/semantic_review.csv",
+  "screening_version": "1.0"
+}
